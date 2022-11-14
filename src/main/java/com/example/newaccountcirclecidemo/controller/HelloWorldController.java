@@ -27,4 +27,10 @@ public class HelloWorldController
     {
         return service.getNames();
     }
+
+    @GetMapping("things")
+    public String[] getSomething()
+    {
+        return new String[] {"umbrella", "cat", "red"};
+    }
 }
